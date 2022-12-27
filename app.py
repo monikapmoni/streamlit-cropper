@@ -6,7 +6,8 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # Upload an image and set some options for demo purposes
 st.header("Cropper Demo")
-img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg'])
+img_file = st.camera_input("Take a picture")
+
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
 box_color = st.sidebar.color_picker(label="Box Color", value='#0000FF')
 
